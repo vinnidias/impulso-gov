@@ -9,7 +9,7 @@ def server_is_running():
     "message": "server is running"
   }
 
-@app.get("/currenttime")
+@app.get("/current_time")
 def current_time():
   time_now =  datetime.now().strftime("%H:%M:%S")
   return {
