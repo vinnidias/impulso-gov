@@ -8,7 +8,6 @@ import { Container, TextContainer } from "./styles/styles"
 
 function App() {
   const [currentTime, setCurrentTime] = useState(" ")
-
   const wordsList = [
     "Front-End ",
     3500,
@@ -33,6 +32,7 @@ function App() {
         console.log("terminou: ", currentTime)
       } catch (error) {
         console.log("api req fail", error)
+        setCurrentTime("😴")
       }
     }
     getTime()
@@ -47,7 +47,7 @@ function App() {
         <h2>Desenvolvedor </h2>
         <AnimatedTyper wordsList={wordsList} wrapper={"h2"}/>
       </TextContainer>
-      <Clock currentTime={currentTime} />
+      <Clock currentTime={currentTime}/>
     </Container>
 
   );
