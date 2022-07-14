@@ -1,29 +1,19 @@
 import React from "react";
 import TypeAnimation from 'react-type-animation';
-import { Container, StaticText, TextAnimate } from "./styles"
 
-type Props = {
-  wordsList: (string | number) [ ]
+type IProps = {
+  wordsList: (string | number)[];
+  wrapper: string
 }
 
-export const AnimatedTyper: React.FC<Props> = ({ wordsList }) => {
-
-
-
+export const AnimatedTyper: React.FC<IProps> = ({ wordsList, wrapper }) => {
   return (
-    <Container>
-      <StaticText>Texto estático: {" "}</StaticText>
-      <TextAnimate 
-        cursor={true}
-        sequence={[
-          "Primeiro Texto", 
-          1000,
-          "Segundo Texto",
-          1000
-        ]}
-        wrapper="p"
-        repeat={Infinity}
-      />
-    </Container>
+    <TypeAnimation
+      cursor={true}
+      sequence={wordsList}
+      wrapper={wrapper}
+      repeat={Infinity}
+    />
+
   )
 }
