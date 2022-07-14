@@ -6,13 +6,16 @@ export const Container = styled.div`
   top: 30%;
   width: 200px;
   height: 200px;
+  background-color: rgba(0,0,0, 0.1);
   backdrop-filter: blur(25px);
   border-radius: 50%;
   border: 1px solid rgba(255,255,255, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
+  
+   
   p {
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
