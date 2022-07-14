@@ -1,4 +1,4 @@
-# Desafio Impulso Gov
+# Desafio Front End ImpulsoGov
 
 Criei esse projeto React App para utilizar o componente de texto animado e para consumir a api que retorna a hora atual!
   
