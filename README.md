@@ -53,6 +53,7 @@ const wordsList = [
 - [styled-components](https://styled-components.com/)
 - [axios](https://axios-http.com/ptbr/docs/intro)
 - [react-icons](https://react-icons.github.io/react-icons/)
+- [Vercel](https://vercel.com/)
 
 
  
